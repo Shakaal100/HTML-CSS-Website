@@ -9,12 +9,12 @@
 
 :root {
     --primary-color: #FAE8F1;
-    --secondary-color: #D2C7B2;
+    --secondary-color: #E4D6EA;
     --font-color: #333;
     --font-family: 'Merriweather', serif;
     --font-size: 16px;
     --line-height: 1.5;
-    --color1: #36A3BC;
+    --color1: #B6CCBC;
     --color2: #3AA7DF;
     --color3: #A779A3;
     --color4: #4F46E5;
@@ -30,7 +30,7 @@ body {
 }
 
 nav{
-    margin: 1em auto 3em auto;
+    margin: 1em auto 5em auto;
     width: min(1000px, 100%);
     padding-left: 0;
 }
@@ -52,6 +52,7 @@ nav li:first-child{
 nav a{
     text-decoration: none;
     color:#333;
+    font-size: 1.3rem;
 }
 
 nav a:hover{
@@ -61,7 +62,7 @@ nav a:hover{
 header, section {
     margin:2em auto;
     width: min(75em, 100%);
-    padding-left: 0;
+    padding-left: auto;
     padding:min(2em, 15%);
     background-color:var(--primary-color);
     border-radius: 1em;
@@ -72,7 +73,7 @@ header, section {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 3em;
+    gap: 5em;
 }
 
 header img{
@@ -103,4 +104,53 @@ header img{
 }
  .secondary {
     background-color: var(--color2);
+}
+
+section {
+    padding: 3em min(2em, 15%);
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+section p{
+    margin-top: 1em;
+    font-size: 1.25rem;
+}
+
+section img {
+    border-radius: 1em;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+section#my-work{
+    background-color: var(--color1);
+}
+
+.grid-container{
+    margin-top: 3em;
+    margin-bottom: 3em;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "img-1 img-1 img-2 img-3"
+    "img-1 img-1 img-4 img-5";
+    gap: 1em;
+}
+
+.grid-container img{
+    height: 100%;
+    width: 100%;
+    border-radius: 1em;
+    transition: 100ms ease;
+    cursor: grab;
+}
+.grid-container img:hover{
+    scale: 1.05;
 }
