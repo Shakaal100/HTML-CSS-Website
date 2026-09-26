@@ -14,10 +14,11 @@
     --font-family: 'Merriweather', serif;
     --font-size: 16px;
     --line-height: 1.5;
-    --color1: #B6CCBC;
+    --color1: #B3B3B3;
     --color2: #3AA7DF;
     --color3: #A779A3;
     --color4: #4F46E5;
+    --foter-color: #17202A;
 
 }
 
@@ -45,14 +46,17 @@ nav ul{
 
 nav li:first-child{
     margin-right: auto;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+}
+
+nav li:first-child a {
+    font-size: 1.3rem;
 }
 
 nav a{
     text-decoration: none;
     color:#333;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 nav a:hover{
@@ -153,4 +157,91 @@ section#my-work{
 }
 .grid-container img:hover{
     scale: 1.05;
+}
+
+#details h2{
+    font-size: 2.4rem;
+}
+
+details{
+    margin-top: 1em;
+    background-color: var(--color1);
+    border-radius: 1em;
+}
+details summary{
+    padding: 1em;
+    font-size: 1.5rem;
+    color: blue;
+
+}
+details p{
+    padding: 0 2em 2em 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-section{
+    padding: 1px 0;
+    background: var(--foter-color);
+    color: white;
+    border-radius: 1em;
+}
+
+.footer-section :where(.copyright-text, .social-link, .policy-link) {
+    color: white;
+}
+
+.footer-section .section-content{
+    margin:2em auto;
+    width: min(75em, 100%);
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-section .social-link-list{
+    display: flex;
+    gap: 10px;
+}
+
+.footer-section .social-link-list a{
+    font-size: .7em;
+    cursor: pointer;
+}
+
+.footer-section .social-link .fa-youtube:hover{
+    color: red;
+}
+
+.footer-section .social-link-list a:hover{
+    -webkit-text-stroke: 1px white;
+}
+
+.footer-section .social-link .fa-linkedin:hover{
+    color: #26B2F3;
+}
+.footer-section .social-link .fa-x-twitter:hover{
+    color: #020f15;
+}
+.footer-section .social-link .fa-github:hover{
+    color: #A168E0;
+}
+.footer-section .social-link .fa-facebook:hover{
+    color: #0e3ed1;
+}
+.footer-section .social-link .fa-tiktok:hover{
+    color: #01070a;
+}
+
+.footer-section .seperator{
+    margin: 0 5px;
+}
+
+.footer-section .policy-text a{
+    font-size: .8rem;
+    text-decoration: none;
+}
+
+.footer-section .policy-text a:hover{
+    text-decoration: underline;
 }
