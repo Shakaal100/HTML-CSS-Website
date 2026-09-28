@@ -131,8 +131,63 @@ section img {
     object-position: bottom;
 }
 
+.section-title::after{
+    content: "";
+    width: 100px;
+    height: 3px;
+    background: orange;
+    display: block;
+    border-radius: 1em;
+    margin: 5px auto 0;
+}
+
+.work::after{
+    content: "";
+    width: 180px;
+    height: 3px;
+    background: orange;
+    display: block;
+    border-radius: 1em;
+    margin: 5px auto 0;
+}
+
+.title-div{
+    position: relative;
+    margin-bottom: 50px;
+}
+.header-title::after{
+    content: "";
+    width: 120px;
+    height: 3px;
+    background: orange;
+    display: block;
+    border-radius: 1em;
+    position:absolute;
+    left: 50px;
+    margin: 5px auto 0;
+}
+.detail-title::after{
+    content: "";
+    width: 190px;
+    height: 3px;
+    background: orange;
+    display: block;
+    border-radius: 1em;
+    margin: 5px auto 0;
+}
+
+.about-title::after{
+    content: "";
+    width: 140px;
+    height: 3px;
+    background: orange;
+    display: block;
+    border-radius: 1em;
+    margin: 5px auto 0;
+}
+
 section#my-work{
-    background-color: var(--color1);
+    background-color: #DEE5E2;
 }
 
 .grid-container{
@@ -157,6 +212,16 @@ section#my-work{
 }
 .grid-container img:hover{
     scale: 1.05;
+}
+
+.work-button{
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--color4);
+    color : white;
+    padding: .75em 1.25em;
+    border-radius: .5em;
+    font-weight: 600;
 }
 
 #details h2{
@@ -232,6 +297,21 @@ details p{
 .footer-section .social-link .fa-tiktok:hover{
     color: #01070a;
 }
+.footer-section .social-link .fa-linkedin:active{
+    color: #26B2F3;
+}
+.footer-section .social-link .fa-x-twitter:active{
+    color: #020f15;
+}
+.footer-section .social-link .fa-github:active{
+    color: #A168E0;
+}
+.footer-section .social-link .fa-facebook:active{
+    color: #0e3ed1;
+}
+.footer-section .social-link .fa-tiktok:active{
+    color: #01070a;
+}
 
 .footer-section .seperator{
     margin: 0 5px;
@@ -244,4 +324,164 @@ details p{
 
 .footer-section .policy-text a:hover{
     text-decoration: underline;
+}
+
+@media(max-width: 520px){
+
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    nav li {
+        display: none;
+    }
+
+    nav li:first-child,
+    nav li:last-child {
+    display: flex;
+}
+
+    nav li:first-child a {
+    font-size: 1rem;
+}
+
+.flex-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.text-container h1{
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.text-container h2{
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.text-container p{
+    text-align: left;
+    margin-top: 1em;
+    font-size: 1rem;
+}
+
+.cta-button{
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+#about img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.grid-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.work{
+    font-size: 1.2rem;
+}
+
+#details h2{
+    font-size: 1.2rem;
+}
+
+details summary{
+    padding: 1em;
+    font-size: 1rem;
+
+}
+
+details p{
+    padding: 0 2em 2em 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-align:start;
+}
+
+.footer-section .section-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 2em auto;
+}
+
+
+
+.footer-section .copyright-text{
+    font-size: .8rem;
+}
+
+.footer-section .policy-text{
+    font-size: .8rem;
+}
+
+.footer-section .social-link-list a{
+    font-size: .5rem;
+}
+
+header, section{
+    margin: .2em auto;
+}
+
+
+
+.work::after{
+    content: "";
+    width: 160px;
+    height: 3px;
+    background: orange;
+    display: block;
+    border-radius: 1em;
+    margin: 5px auto 0;
+}
+
+.title-div{
+    position: relative;
+    margin-bottom: 20px;
+}
+.header-title::after{
+    content: "";
+    width: 80px;
+    height: 3px;
+    background: orange;
+    display: block;
+    border-radius: 1em;
+    position:absolute;
+    left: 100px;
+    margin: 5px auto 0;
+}
+.detail-title::after{
+    content: "";
+    width: 100px;
+    height: 3px;
+    background: orange;
+    display: block;
+    border-radius: 1em;
+    margin: 5px auto 0;
+}
+
+.about-title::after{
+    content: "";
+    width: 120px;
+    height: 3px;
+    background: orange;
+    display: block;
+    border-radius: 1em;
+    margin: 5px auto 0;
+}
 }
