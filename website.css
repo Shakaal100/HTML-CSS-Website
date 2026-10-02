@@ -110,6 +110,10 @@ header img{
     background-color: var(--color2);
 }
 
+.youtube{
+    background-color: rgb(210, 13, 13);
+}
+
 section {
     padding: 3em min(2em, 15%);
     background-color: var(--secondary-color);
